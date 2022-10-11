@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'overview',
+    loadChildren: () => import('./pages/overview/overview.module').then( m => m.OverviewPageModule)
+  },
+  {
+    path: 'my-assets',
+    loadChildren: () => import('./pages/my-assets/my-assets.module').then( m => m.MyAssetsPageModule)
+  },
 ];
 
 @NgModule({
