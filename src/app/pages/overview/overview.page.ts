@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-overview',
@@ -10,6 +10,5 @@ export class OverviewPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
-
+    }
 }
